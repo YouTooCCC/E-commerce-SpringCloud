@@ -1,0 +1,39 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /ecommerce-nacos-client
+# 添加这个后缀
+spring:
+  application:
+    name: e-commerce-nacos-client #应用程序名
+  cloud:
+    nacos:
+      discovery:
+        enabled: true #使用nacos进行服务注册与发现
+        server-addr: 127.0.0.1:8848 #nacos服务器的地址,集群 0.0.0.0:8848 ,1.1.1.1:8848,2.2.2.2:8848
+        namespace: 191cac67-24dd-4561-ba32-2baabfd242e0 #命名空间的id
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+#拥有两种方式，配置类，和yaml配置
+  sleuth:
+    sampler:
+      #抽样策略
+      probability: 1.0
+      #抽样策略 限速采集
+      rate: 100
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      retries: 3
+    consumer:
+      auto-offset-reset: latest
+#暴露端点
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include:  '*'

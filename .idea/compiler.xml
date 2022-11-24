@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="E-commerce-admin" />
+        <module name="E-commerce-authority-center01" />
+        <module name="E-commerce-authority-center" />
+        <module name="E-commerce-alibaba-nacos-client" />
+        <module name="E-commerce-mvc-config" />
+        <module name="E-commerce-account-service" />
+        <module name="Eo-commerce-common" />
+        <module name="E-commerce-gateway" />
+        <module name="E-commerce-goods-service" />
+        <module name="E-commerce-service-sdk" />
+        <module name="E-commerce-config" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

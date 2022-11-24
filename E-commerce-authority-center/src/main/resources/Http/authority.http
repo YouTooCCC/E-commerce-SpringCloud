@@ -1,0 +1,22 @@
+POST http://127.0.0.1:7000/ecommerce-authoiry-center/authority/register
+Content-Type: application/json
+
+{
+  "username": "ppppp",
+  "password": "123456"
+}
+
+###
+POST http://127.0.0.1:7000//ecommerce-authoiry-center/authority/token
+Content-Type: application/json
+
+{
+  "username": "bobo1",
+  "password": "123456"
+}
+
+
+
+
+
+

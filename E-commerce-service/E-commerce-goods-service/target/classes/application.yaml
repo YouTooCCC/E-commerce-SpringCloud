@@ -1,0 +1,71 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /ecommerce-goods-service
+# 添加这个后缀
+spring:
+  application:
+    name: e-commerce-goods-service #应用程序名
+  cloud:
+    nacos:
+      discovery:
+        enabled: true #使用nacos进行服务注册与发现
+        server-addr: 127.0.0.1:8848 #nacos服务器的地址,集群 0.0.0.0:8848 ,1.1.1.1:8848,2.2.2.2:8848
+        namespace: 191cac67-24dd-4561-ba32-2baabfd242e0 #命名空间的id
+        #监控数据信息
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+  #拥有两种方式，配置类，和yaml配置
+  sleuth:
+    sampler:
+      #抽样策略
+      probability: 1.0
+      #抽样策略 限速采集
+      #rate: 100
+  #zipkin的相关配置
+  zipkin:
+    sender:
+      type: KAFKA
+    base-url: http://localhost:9411
+  #kafka的相关配置
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      retries: 3
+    consumer:
+      auto-offset-reset: latest
+  #mysql的相关配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/e-commerce?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  #jpa的配置
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+    open-in-view: false
+  #redis的配置
+  redis:
+    #使用的库为号库
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10000
+
+
+
+#暴露端点
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include:  '*'

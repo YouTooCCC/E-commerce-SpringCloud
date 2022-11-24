@@ -1,0 +1,14 @@
+GET http://127.0.0.1:9001/imooc/ecommerce-nacos-client/nacos/service-instancd?serviceId=e-commerce-gateway
+Accept: application/json
+E-commerce-User: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjYsXCJ1c2VybmFtZVwiOlwicHBwcHBcIn0iLCJqdGkiOiI0YTY4YzMyZC0wOWQ5LTRhNjAtYTA4YS1kOWIyOTViMDU5NmQiLCJleHAiOjE2NjkwNDY0MDB9.WIvX9FAT5PRT2FEIonrm7oUD-jyaqqnAFwZcx0yjdvUchogAxJvXktmQCyiFYWVcsZtE2EB8Z2rGN3scRfcVazJVMzURKqwGrSXEEu92X9ikdhzes7K64CEG58_as9vv-3YlONYKcLPKb7S8saJuyeqVFcbaVQaXvBqwiyQOlUUOGYmg8b6WcL02iQ2UteM-ov-4DRqPAtLfieptr6zvcuR2u_y6F_cV1xcrNiT2pmQnW3pHDx6SofG1ZG9iCgnjTF6-Jl8Ve5klSgDIpV16DIjq89N-REXk1S2Pteli0zy1e03TFrppHUqCL55snCEYqkUfgOaPCRDut3oDXrOBlQ"
+token: imooc
+
+###
+POST 127.0.0.1:9001/imooc/e-commerce/register
+Content-Type: application/json
+
+{
+  "username": "aaaaa",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+

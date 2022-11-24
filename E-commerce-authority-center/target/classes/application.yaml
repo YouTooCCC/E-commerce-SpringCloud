@@ -1,0 +1,40 @@
+server:
+  port: 7000
+  servlet:
+    context-path: /ecommerce-authoiry-center
+
+
+spring:
+  application:
+    name: e-commerce-authoiry-center
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        namespace: 191cac67-24dd-4561-ba32-2baabfd242e0
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/e-commerce?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+    open-in-view: false
+
+#mybatis-plus:
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  type-aliases-package: com.atweibo.ecommerce.entity
+#  configuration:
+    #开启驼峰命名
+#    map-underscore-to-camel-case: true

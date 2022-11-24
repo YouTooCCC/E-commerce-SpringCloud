@@ -1,0 +1,27 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="customHeaders">
+        <set>
+          <option value="    &quot;username&quot;" />
+          <option value="    &quot;password&quot;" />
+          <option value="&quot;username&quot;" />
+          <option value="&quot;password&quot;" />
+          <option value="e-commerce-user" />
+          <option value="E-commerce-User" />
+          <option value="token" />
+          <option value="E-commerce-user" />
+          <option value="  &quot;goodsCategory&quot;" />
+          <option value="  &quot;brandCategory&quot;" />
+          <option value="  &quot;goodsName&quot;" />
+          <option value="  &quot;goodsPic&quot;" />
+          <option value="  &quot;price&quot;" />
+          <option value="  &quot;goodsProperty&quot;" />
+          <option value="  &quot;supply&quot;" />
+          <option value="{" />
+        </set>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
