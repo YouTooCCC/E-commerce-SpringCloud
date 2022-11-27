@@ -28,6 +28,23 @@ spring:
       retries: 3
     consumer:
       auto-offset-reset: latest
+
+#feign 配置
+feign:
+  #feign开启gzip压缩
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      #最小压缩量
+      min-request-size: 1024
+    response:
+      enabled: true
+  #禁用默认的，启用okhttp
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
 #暴露端点
 management:
   endpoint:
@@ -37,3 +54,4 @@ management:
     web:
       exposure:
         include:  '*'
+

@@ -1,6 +1,6 @@
-GET  http://localhost:9001/imooc/ecommerce-goods-service/asyncGoods/taskInfo?taskId=
+GET  http://localhost:9001/imooc/ecommerce-goods-service/asyncGoods/taskInfo?taskId=d0779782-ef34-4023-9b23-68ca58a51491
 Content-Type: application/json
-E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiZjIyOGJiMjUtYzZiYi00MTZjLThmODUtZDI1MmU4ZjdiZDkyIiwiZXhwIjoxNjY5MjE5MjAwfQ.CEAJopkvV_c9aI0d6ekgeknHIWghn-GAQWTwl8f2ri3dZMgCBgzmmFquom3i1ClORmIWJlRHMT_mZAISJKDIwoyCFeO5WKlznKyyItAO7c3wTMNytUyoxJcHe4RHG9QOcqhNyQ5twLBymDMbT7t14-RHn_nJxY9j90-ReXJlDXEm1fKDd-ka8-OW2gOpBlVyqlx8H1tNB3lIjnL5Sfp4CFEnF0xPcJGp7Maoay8FciUnxvtPQZBYEq-YM-uPNsuHXKwMhj-51PQdi4RcfXCRmVPOGc-JS-qo6Pzqapi9cXEuzcHUQJsEO5nkFpzBpwmyzFTcUSvzIQqRMG2DjY2lCQ
+E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiODQzN2QyMGUtNGRhMi00MjFhLTkwMTMtZmQ4NDdiZDYwOWJiIiwiZXhwIjoxNjY5MzkyMDAwfQ.M7THE0haMXRuK0iukcclZj5mc8rPs4xzVL67oHwzf0kExqiqkteAMaImqwdX1D2d-DKFyeeoQx6T5scpmAESHteP8OO6kUfNB9YAMYnvg4aqxliQd9uxzmVcPMNcOCO4A_CL3Ne9LwMktlG7AE3nxaJZ-p8TO9YhkXLBUKlxo146ZpMdezSCdARx3o9Q4KNl2Ne5-4QOCOvC3UlOXSRuAO0Tre-wr-C3DmjQgPv4YWg4PD2C0P8ADsHfvpIOV6jZ9XApoLM1meD6iE2HUxbbuP7z9QXa954TCGfPqK3IdkOCn01E7_TDkXu8IPP-vhvA-DRYNC7ktR8Knz9pTocVdw
 
 
 
@@ -9,44 +9,44 @@ E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXC
 
 POST http://localhost:9001/imooc/ecommerce-goods-service/asyncGoods/importGoods
 Content-Type: application/json
-E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiZTM1MzRhNjYtNGQ2Zi00OWRmLTk5NjEtMThlMjVmMDVmOTM3IiwiZXhwIjoxNjY5MzA1NjAwfQ.l9kHCScvwSAnOZH5gXL4utQGXQIWkjyT4uZfdSDUAUyNv9u10Rli9sjGkYkthPVOVNiA-HKNZ8Y_8UyqrSru-GUcJZdcZhKOofAYQxn9NjKyvLf8-OUVeWH1HIEo2_qxlUfyEN_w0etSTS_3tqcpAfvXCrp3hAZfTGoupjPuDtjbYc-zpHExbYYXVyOg5xLbQ-LkoLbTfC-99L0bGBEGPJFUxEBEflzmbfiJAecfl7Z7V0jXDZVQ-Z7nR7MAN3wbiM7P_aswRxfShRtUe4C5Imm5YizgAMDdmw0I-vUiXIC4rhUyVA02_xt-ctG6OZ8qIEPge1OZH1KK97vhmWm4jA
+E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiODQzN2QyMGUtNGRhMi00MjFhLTkwMTMtZmQ4NDdiZDYwOWJiIiwiZXhwIjoxNjY5MzkyMDAwfQ.M7THE0haMXRuK0iukcclZj5mc8rPs4xzVL67oHwzf0kExqiqkteAMaImqwdX1D2d-DKFyeeoQx6T5scpmAESHteP8OO6kUfNB9YAMYnvg4aqxliQd9uxzmVcPMNcOCO4A_CL3Ne9LwMktlG7AE3nxaJZ-p8TO9YhkXLBUKlxo146ZpMdezSCdARx3o9Q4KNl2Ne5-4QOCOvC3UlOXSRuAO0Tre-wr-C3DmjQgPv4YWg4PD2C0P8ADsHfvpIOV6jZ9XApoLM1meD6iE2HUxbbuP7z9QXa954TCGfPqK3IdkOCn01E7_TDkXu8IPP-vhvA-DRYNC7ktR8Knz9pTocVdw
 
 [
 {
-  "goodsCategory": "10002",
+  "goodsCategory": "10004",
   "brandCategory": "20002",
   "goodsName": "mi14proMax",
-  "goodsDescription": "小米手机",
-  "goodsPic": "1",
-  "price": "1000",
-  "supply": "2000",
+  "goodsDescription": "黑米手机手机",
+  "goodsPic": " ",
+  "price": "10000",
+  "supply": "520",
   "goodsProperty": {
     "size": "12cm * 6.5cm",
-    "color": "紫色",
+    "color": "黑色",
     "material": "金属机身，玻璃后盖",
-    "pattern": "纯色"
+    "pattern": "纯黑色"
   }
 },
   {
-    "goodsCategory": "10003",
-    "brandCategory": "20003",
-    "goodsName": "ipone14proMax",
-    "goodsDescription": "大米手机",
+    "goodsCategory": "10001",
+    "brandCategory": "20004",
+    "goodsName": "没用14proMax",
+    "goodsDescription": "没啥用手机",
     "goodsPic": " ",
-    "price": "10000",
-    "supply": "2000",
+    "price": "100",
+    "supply": "200",
     "goodsProperty": {
-      "size": "12cm * 6.5cm",
-      "color": "紫色",
+      "size": "102cm * 60.5cm",
+      "color": "白色",
       "material": "金属机身，玻璃后盖",
-      "pattern": "纯色"
+      "pattern": "纯白色"
     }
   },
   {
     "goodsCategory": "10001",
     "brandCategory": "20004",
     "goodsName": "mi14proMax",
-    "goodsDescription": "大飞手机",
+    "goodsDescription": "妹子手机",
     "goodsPic": "",
     "price": "10000",
     "supply": "2000",

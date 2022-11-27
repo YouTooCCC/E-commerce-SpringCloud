@@ -1,0 +1,46 @@
+###通过原始Feign Api获取Token
+POST http://localhost:8000/ecommerce-nacos-client/communication/inFeign
+Content-Type: application/json
+
+{
+  "username": "aaaaa",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+###
+###通过openFeign获取Token
+POST http://localhost:8000/ecommerce-nacos-client/communication/opfeign
+Content-Type: application/json
+
+{
+  "username": "aaaaa",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+
+###通过ribbon获取Token
+POST http://localhost:8000/ecommerce-nacos-client/communication/ribbon
+Content-Type: application/json
+
+{
+  "username": "aaaaa",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+
+###通过loadBalncer获取Token
+POST http://localhost:8000/ecommerce-nacos-client/communication/loadBalancer
+Content-Type: application/json
+
+{
+  "username": "aaaaa",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+
+###通过restTemplate获取Token
+POST http://localhost:8000/ecommerce-nacos-client/communication/restTemplate
+Content-Type: application/json
+
+{
+  "username": "aaaaa",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+
+###

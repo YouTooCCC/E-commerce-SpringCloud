@@ -1,0 +1,61 @@
+POST http://127.0.0.1:9001/imooc/ecommerce-goods-service/goods/deductGoodsInventory
+Content-Type: application/json
+E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiYmY1YjJjZjQtZWY3MS00ZTBkLWJkZWYtNzBiMDgzNDIwZGM5IiwiZXhwIjoxNjY5MzkyMDAwfQ.jCuXwcmg1AbfISeB3_M2EkRfFUN5ZWwZrcd64CuXOIIR-4J7sNv58ABp06iqR5kIkYCvU1w9wvNrhtq-bv_ebisdSUn2hh_7qAgq6G_CznaF0G4h1yiRwNqZydmtACS6fMmga86dyGZw1hgfeJ0B4M_HUVhjzdEWv_peA0zYMevUzFQBeqRKb_WIxf4vV8kSNvX8VBr1ix0SE3FKxMmKAiXVT_194vDawVxpotceVgMPhsHzBfRT-Coz8vWkz040tLGDc7k-Q8sdPDxWrTz63YqFlY09FzF-pLmpLq67PQ-fX-whmpWSw154L0xSDvgfMDkRUcpeN_8tFHItYN19_Q
+
+[
+  {
+  "goodsId": 16,
+  "count": 20
+  },
+  {
+    "goodsId": 17,
+    "count": 20
+  }
+]
+
+
+###
+###根据TableId查询简单商品信息
+POST http://127.0.0.1:9001/imooc/ecommerce-goods-service/goods/simpleGoodsInfoByTableId
+Content-Type: application/json
+E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiYmY1YjJjZjQtZWY3MS00ZTBkLWJkZWYtNzBiMDgzNDIwZGM5IiwiZXhwIjoxNjY5MzkyMDAwfQ.jCuXwcmg1AbfISeB3_M2EkRfFUN5ZWwZrcd64CuXOIIR-4J7sNv58ABp06iqR5kIkYCvU1w9wvNrhtq-bv_ebisdSUn2hh_7qAgq6G_CznaF0G4h1yiRwNqZydmtACS6fMmga86dyGZw1hgfeJ0B4M_HUVhjzdEWv_peA0zYMevUzFQBeqRKb_WIxf4vV8kSNvX8VBr1ix0SE3FKxMmKAiXVT_194vDawVxpotceVgMPhsHzBfRT-Coz8vWkz040tLGDc7k-Q8sdPDxWrTz63YqFlY09FzF-pLmpLq67PQ-fX-whmpWSw154L0xSDvgfMDkRUcpeN_8tFHItYN19_Q
+
+{
+"ids": [
+{
+"id": 17
+},
+{
+"id": 16
+}
+
+]
+}
+
+
+###
+
+###根据分页查询商品信息
+GET http://127.0.0.1:9001/imooc/ecommerce-goods-service/goods/simpleGoodsInfoBypage
+Accept: application/json
+E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiYmY1YjJjZjQtZWY3MS00ZTBkLWJkZWYtNzBiMDgzNDIwZGM5IiwiZXhwIjoxNjY5MzkyMDAwfQ.jCuXwcmg1AbfISeB3_M2EkRfFUN5ZWwZrcd64CuXOIIR-4J7sNv58ABp06iqR5kIkYCvU1w9wvNrhtq-bv_ebisdSUn2hh_7qAgq6G_CznaF0G4h1yiRwNqZydmtACS6fMmga86dyGZw1hgfeJ0B4M_HUVhjzdEWv_peA0zYMevUzFQBeqRKb_WIxf4vV8kSNvX8VBr1ix0SE3FKxMmKAiXVT_194vDawVxpotceVgMPhsHzBfRT-Coz8vWkz040tLGDc7k-Q8sdPDxWrTz63YqFlY09FzF-pLmpLq67PQ-fX-whmpWSw154L0xSDvgfMDkRUcpeN_8tFHItYN19_Q
+
+
+###根据tableId查询商品信息
+POST http://127.0.0.1:9001/imooc/ecommerce-goods-service/goods/goodsInfoByTableId
+Content-Type: application/json
+E-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJFLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjQsXCJ1c2VybmFtZVwiOlwiY2NjY2NjXCJ9IiwianRpIjoiYmY1YjJjZjQtZWY3MS00ZTBkLWJkZWYtNzBiMDgzNDIwZGM5IiwiZXhwIjoxNjY5MzkyMDAwfQ.jCuXwcmg1AbfISeB3_M2EkRfFUN5ZWwZrcd64CuXOIIR-4J7sNv58ABp06iqR5kIkYCvU1w9wvNrhtq-bv_ebisdSUn2hh_7qAgq6G_CznaF0G4h1yiRwNqZydmtACS6fMmga86dyGZw1hgfeJ0B4M_HUVhjzdEWv_peA0zYMevUzFQBeqRKb_WIxf4vV8kSNvX8VBr1ix0SE3FKxMmKAiXVT_194vDawVxpotceVgMPhsHzBfRT-Coz8vWkz040tLGDc7k-Q8sdPDxWrTz63YqFlY09FzF-pLmpLq67PQ-fX-whmpWSw154L0xSDvgfMDkRUcpeN_8tFHItYN19_Q
+
+{
+  "ids": [
+    {
+      "id": 17
+    },
+    {
+      "id": 16
+    }
+
+  ]
+}
+
+###

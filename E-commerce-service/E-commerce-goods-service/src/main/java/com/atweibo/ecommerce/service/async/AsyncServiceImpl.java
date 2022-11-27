@@ -47,12 +47,12 @@ public class AsyncServiceImpl implements IAsyncService {
      *  1. 将商品信息保存到数据表
      *  2. 更新商品缓存
      * */
-    @Async("getAsyncExecutor")
+    @Async("getAsyncExecutor") //使用自定义的线程池
     @Override
     public void asyncImportGoods(List<GoodsInfo> goodsInfos, String taskId) {
 
         log.info("async task running taskId: [{}]", taskId);
-
+        //时间监视器
         StopWatch watch = StopWatch.createStarted();
 
         // 1. 如果是 goodsInfo 中存在重复的商品, 不保存; 直接返回, 记录错误日志
